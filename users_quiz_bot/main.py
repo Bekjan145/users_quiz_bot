@@ -8,12 +8,11 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from dotenv import load_dotenv
 
-
 load_dotenv()
 TOKEN = getenv("BOT_TOKEN")
-print("Hello")
 
 dp = Dispatcher()
+
 
 async def main() -> None:
     from users_quiz_bot.handlers import start_router, router
